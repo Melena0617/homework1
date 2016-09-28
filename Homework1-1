@@ -1,0 +1,1 @@
+$ ls -l | perl -ane '$i=0; $j=0; while ($F[$j]){$j++}; while($F[$i]){if ($j>=8){if ($i<8){print "$F[$i++];"} else {print "$F[$i++] "}} else {print "$F[$i++];"}}; print "\n"' | tee hometask.txt
