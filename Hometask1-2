@@ -1,1 +1,1 @@
-cat 'hometask.txt' |perl -lanF";" -e 'BEGIN {$i=0}  $j=8; if ($F[4] > 1000000) { $i++; print "$F[8]" } END { print "Numbers of all strings = '$.'. Number of needed strings = $i\n" }'
+cat 'hometask.txt' | perl -lanF";" -e 'BEGIN {$i=0}  if ($F[4] >= (1048576)) { $i++; print "$F[8]" } END { print "Numbers of all strings = '$.'. Number of needed strings = $i\n" }'
